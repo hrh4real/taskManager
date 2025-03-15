@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(183, 56, 54);
+    padding: 1.2rem 0.3rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.heading-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.heading-div > img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.heading-div > h1 {
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 600;
+}
+
+.bar-div {
+    position: relative;
+}
+
+.bar-div > button {
+    background-color: rgb(183, 56, 54);
+    border: none;
+    cursor: pointer;
+}
+
+.bar-div > button > img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    border-radius: 10px;
+    padding-right: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(231, 163, 163);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    min-width: 180px;
+    display: none;
+    z-index: 10;
+    margin-top: 4px;
+}
+
+.bar-div:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-menu li:hover {
+    background-color: rgba(183, 56, 54, 0.2);
+}
