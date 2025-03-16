@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "./Header";
+import Main from "./Main";
 
 export default function App() {
     return (
-        <main>
+        <div className="app-container">
             <Header />
-        </main>
+            <Main />
+        </div>
     )
 }

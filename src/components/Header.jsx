@@ -14,13 +14,11 @@ export default function Header() {
                 <button>
                     <img src={barLogo} alt="bar-logo" />
                 </button>
-                <div className="dropdown-menu">
+                <div className="dropdown-menu" role="menu" aria-label="User menu">
                     <ul>
-                        <li>Profile</li>
-                        <li>All Tasks</li>
-                        <li>Create New Task</li>
-                        <li>Settings</li>
-                        <li>Log Out</li>
+                        <li role="menuitem">Profile</li>
+                        <li role="menuitem">Settings</li>
+                        <li role="menuitem">Log Out</li>
                     </ul>
                 </div>
             </div>
